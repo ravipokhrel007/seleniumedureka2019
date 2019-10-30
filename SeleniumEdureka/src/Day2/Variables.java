@@ -17,7 +17,7 @@ public class Variables
 		float decimal = 123.22121f;
 		double d2 = 321.33333;
 		
-		String str = "Ravi";
+		String str = "Ravi007";
 		
 		System.out.println("Second number of byte: " + secondNumber);
 		System.out.println("Second number of long: " + thirdNumber);
