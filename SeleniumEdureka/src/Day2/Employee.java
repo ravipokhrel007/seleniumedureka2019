@@ -11,6 +11,6 @@ void calculateSalary()
 	
 	System.out.println("Total Salary: " + totalSalary);
 }
-			
+	
 
 }
