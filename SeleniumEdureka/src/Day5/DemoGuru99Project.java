@@ -17,7 +17,13 @@ public class DemoGuru99Project
 					
 					guru.addAccount(customerId);
 					
-					//guru.closeBrowser();
+					String accountId = guru.getaccountId(customerId);
+					System.out.println("Account ID is :" + accountId);
+					
+					
+					guru.editAccount(accountId);
+					
+					guru.closeBrowser();
 				}
 
 	

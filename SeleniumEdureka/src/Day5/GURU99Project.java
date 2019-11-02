@@ -82,11 +82,29 @@ public class GURU99Project
 		
 		System.out.println(accountDropdown.isMultiple());
 		
-		
 		driver.findElement(By.name("inideposit")).sendKeys("50000");
 		driver.findElement(By.name("button2")).click();
 		
-		
+	}
+	public String getaccountId(String addAccount) 
+	{
+		String accountId = driver.findElement(By.xpath("//table[@name ='account']/tbody/tr[4]/td[2]")).getText();
+		return accountId;
 		
 	}
+	
+	public void editAccount(String addAccount)
+	{
+		driver.findElement(By.xpath("//a[text()='Edit Account']")).click();
+		driver.findElement(By.name("accountno")).sendKeys(addAccount);
+		driver.findElement(By.name("AccSubmit")).click();
+		
+		WebElement changeAccount = driver.findElement(By.name("a_type"));
+		Select accountDropdown = new Select(changeAccount);
+		accountDropdown.selectByVisibleText("Savings");
+		
+		driver.findElement(By.name("AccSubmit")).click();
+		
+	}
+	
 }
