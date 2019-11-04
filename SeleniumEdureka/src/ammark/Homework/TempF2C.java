@@ -6,7 +6,7 @@ public class TempF2C {
 	{
 		TempF2C temp = new TempF2C();
 		
-		float fahrenheit = 110.00f;
+		float fahrenheit = 119.00f;
 		float celsius = temp.toCelsius(fahrenheit);
 				System.out.println( "Yippe! I calculated " + "FAHRENHEIT :  "  + fahrenheit +"------> TO --->" + "CELSIUS : " + celsius );
 	}
