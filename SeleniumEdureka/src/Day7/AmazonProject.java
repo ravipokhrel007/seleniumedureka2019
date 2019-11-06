@@ -53,7 +53,8 @@ public class AmazonProject {
 	
 	public void printAllProducts()
 	{
-		List<WebElement> allProducts = driver.findElements(By.xpath("//li[starts-with(@id,'result_')]"));
+		//List<WebElement> allProducts = driver.findElements(By.xpath("//li[starts-with(@id,'result_')]"));
+		List<WebElement> allProducts = driver.findElements(By.xpath("//span[@class = 'a-size-base-plus a-color-base']"));
 		
 		for(WebElement product: allProducts) {
 		System.out.println(product.getText());
@@ -64,7 +65,8 @@ public class AmazonProject {
 	}
 		public void printAllProductsViaMouseScrollDown()
 		{
-			List<WebElement> allProducts = driver.findElements(By.xpath("//li[starts-with(@id,'result_')]"));
+			List<WebElement> allProducts = driver.findElements(By.xpath("//span[@class = 'a-size-base-plus a-color-base']"));
+					//("//li[starts-with(@id,'result_')]"));
 			Actions action = new Actions(driver);
 			
 			for(WebElement product: allProducts) {
@@ -76,7 +78,7 @@ public class AmazonProject {
 		}
 			public void printAllProductsViaJavaScript()
 			{
-				List<WebElement> allProducts = driver.findElements(By.xpath("//li[starts-with(@id,'result_')]"));
+				List<WebElement> allProducts = driver.findElements(By.xpath("//span[@class = 'a-size-base-plus a-color-base']"));
 				
 				
 				int x, y;
@@ -92,7 +94,8 @@ public class AmazonProject {
 				System.out.println("-------------------------------------------------------------------------------");
 				}	
 			}
-			private void scrollDown(int x, int y) {
+			private void scrollDown(int x, int y) 
+			{
 
 				String jsCommand = String.format("window.scrollBy(%d,%d)", x,y);
 				driver.executeScript(jsCommand);

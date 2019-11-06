@@ -12,6 +12,7 @@ public class DemoAmazonProject {
 		
 		ap.printAllProducts();
 		
+		//ap.printAllProductsViaMouseScrollDown();
 		ap.printAllProductsViaJavaScript();
 	}
 
