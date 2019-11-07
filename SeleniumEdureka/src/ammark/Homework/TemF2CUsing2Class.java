@@ -2,12 +2,12 @@ package ammark.Homework;
 
 public class TemF2CUsing2Class {
 
-	
-	public static float toCelsius(float fahrenheit) 
+	public static String mess = "Yippe! I calculated \" + \"FAHRENHEIT :  ";
+	public static float toCelsius(float fahrenheit, String mes) 
 	{
 		float celsius = (fahrenheit -32) *5/9;
 		
-		System.out.println( "Yippe! I calculated " + "FAHRENHEIT :  "  + fahrenheit +"------> TO --->" + "CELSIUS : " + celsius );
+		System.out.println(  mess + fahrenheit +"------> TO --->" + "CELSIUS : " + celsius );
 		return celsius;
 		
 	}
