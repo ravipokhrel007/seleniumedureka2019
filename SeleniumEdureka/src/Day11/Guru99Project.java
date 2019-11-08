@@ -20,7 +20,7 @@ public class Guru99Project {
 	WebDriver driver;
 	
 @Parameters("browserType")
-	@BeforeClass
+	@BeforeClass(alwaysRun=true)
 	
 	public void invokeBrowser(String browserType)
 	{
@@ -49,7 +49,7 @@ public class Guru99Project {
 		}
 	}
 	
-	@AfterClass
+	@AfterClass(alwaysRun=true)
 	public void closeBrowser()
 	{
 		driver.quit();
@@ -66,7 +66,7 @@ public class Guru99Project {
 
 
 @Parameters({"userId", "userpassword"})
-@Test(priority = 1000)
+@Test(priority = 1000, groups = {"Sanity"})
 	public void login(String userId, String password)
 {
 		driver.findElement(By.name("uid")).sendKeys(userId);

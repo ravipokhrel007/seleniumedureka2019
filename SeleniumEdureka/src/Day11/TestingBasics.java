@@ -7,15 +7,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class TestingBasics {
-  @Test(priority=3)
+  @Test(priority=3, groups ={"Sanity", "Regression"})
   public void testcase1() {
 	  System.out.println("Executing test case 1 and p = 3");
   }
-  @Test(priority=1)
+  @Test(priority=1, groups = {"Regression"})
   public void testcase6() {
 	  System.out.println("Executing test case 6 and p = 1");
   }
-  @Test(priority=2)
+  @Test(priority=2, groups ={"Sanity"})
   public void testcase3() {
 	  System.out.println("Executing test case 3 and p = 2");
   }
@@ -23,12 +23,12 @@ public class TestingBasics {
   public void testcase5() {
 	  System.out.println("Executing test case 5 and p = 4");
   }
-  @BeforeMethod
+  @BeforeMethod (alwaysRun=true)
   
   public void beforeATestcase() {
 	  System.out.println("Executing before a test case");
   }
-  @AfterMethod
+  @AfterMethod (alwaysRun=true)
  
   public void afterATestcase() {
 	  System.out.println("Executing after a test case");

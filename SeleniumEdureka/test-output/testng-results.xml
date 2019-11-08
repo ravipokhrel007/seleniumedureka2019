@@ -1,106 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="1" total="4" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Class Execution Suite" duration-ms="4677" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:42 MST">
+  <suite name="Testing Basics Suite" duration-ms="54" started-at="2019-11-07T23:05:40 MST" finished-at="2019-11-07T23:05:40 MST">
     <groups>
+      <group name="Sanity">
+        <method signature="TestingBasics.testcase1()[pri:3, instance:Day11.TestingBasics@10a035a0]" name="testcase1" class="Day11.TestingBasics"/>
+        <method signature="TestingBasics.testcase3()[pri:2, instance:Day11.TestingBasics@10a035a0]" name="testcase3" class="Day11.TestingBasics"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="TestingBasics.testcase1()[pri:3, instance:Day11.TestingBasics@10a035a0]" name="testcase1" class="Day11.TestingBasics"/>
+        <method signature="TestingBasics.testcase6()[pri:1, instance:Day11.TestingBasics@10a035a0]" name="testcase6" class="Day11.TestingBasics"/>
+      </group> <!-- Regression -->
     </groups>
-    <test name="Class Test" duration-ms="4677" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:42 MST">
+    <test name="Basics Test" duration-ms="54" started-at="2019-11-07T23:05:40 MST" finished-at="2019-11-07T23:05:40 MST">
       <class name="Day11.TestingBasics">
-        <test-method status="PASS" signature="beforeAClass()[pri:0, instance:Day11.TestingBasics@727803de]" name="beforeAClass" is-config="true" duration-ms="10" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeAClass -->
-        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:Day11.TestingBasics@727803de]" name="beforeATestcase" is-config="true" duration-ms="0" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
+        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:Day11.TestingBasics@10a035a0]" name="beforeATestcase" is-config="true" duration-ms="7" started-at="2019-11-07T23:05:40 MST" finished-at="2019-11-07T23:05:40 MST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeATestcase -->
-        <test-method status="PASS" signature="testcase5()[pri:-4, instance:Day11.TestingBasics@727803de]" name="testcase5" duration-ms="6" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase5 -->
-        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:Day11.TestingBasics@727803de]" name="afterATestcase" is-config="true" duration-ms="0" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterATestcase -->
-        <test-method status="PASS" signature="testcase6()[pri:1, instance:Day11.TestingBasics@727803de]" name="testcase6" duration-ms="1" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase6 -->
-        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:Day11.TestingBasics@727803de]" name="beforeATestcase" is-config="true" duration-ms="0" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
+        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:Day11.TestingBasics@10a035a0]" name="beforeATestcase" is-config="true" duration-ms="7" started-at="2019-11-07T23:05:40 MST" finished-at="2019-11-07T23:05:40 MST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeATestcase -->
-        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:Day11.TestingBasics@727803de]" name="afterATestcase" is-config="true" duration-ms="0" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterATestcase -->
-        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:Day11.TestingBasics@727803de]" name="beforeATestcase" is-config="true" duration-ms="1" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
+        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:Day11.TestingBasics@10a035a0]" name="beforeATestcase" is-config="true" duration-ms="7" started-at="2019-11-07T23:05:40 MST" finished-at="2019-11-07T23:05:40 MST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeATestcase -->
-        <test-method status="PASS" signature="testcase3()[pri:2, instance:Day11.TestingBasics@727803de]" name="testcase3" duration-ms="1" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcase3 -->
-        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:Day11.TestingBasics@727803de]" name="afterATestcase" is-config="true" duration-ms="0" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterATestcase -->
-        <test-method status="PASS" signature="beforeATestcase()[pri:0, instance:Day11.TestingBasics@727803de]" name="beforeATestcase" is-config="true" duration-ms="0" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeATestcase -->
-        <test-method status="PASS" signature="testcase1()[pri:3, instance:Day11.TestingBasics@727803de]" name="testcase1" duration-ms="3" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
+        <test-method status="PASS" signature="testcase1()[pri:3, instance:Day11.TestingBasics@10a035a0]" name="testcase1" duration-ms="6" started-at="2019-11-07T23:05:40 MST" finished-at="2019-11-07T23:05:40 MST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase1 -->
-        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:Day11.TestingBasics@727803de]" name="afterATestcase" is-config="true" duration-ms="0" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
+        <test-method status="PASS" signature="testcase3()[pri:2, instance:Day11.TestingBasics@10a035a0]" name="testcase3" duration-ms="8" started-at="2019-11-07T23:05:40 MST" finished-at="2019-11-07T23:05:40 MST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase3 -->
+        <test-method status="PASS" signature="testcase6()[pri:1, instance:Day11.TestingBasics@10a035a0]" name="testcase6" duration-ms="7" started-at="2019-11-07T23:05:40 MST" finished-at="2019-11-07T23:05:40 MST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase6 -->
+        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:Day11.TestingBasics@10a035a0]" name="afterATestcase" is-config="true" duration-ms="0" started-at="2019-11-07T23:05:40 MST" finished-at="2019-11-07T23:05:40 MST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterATestcase -->
-        <test-method status="PASS" signature="afterAClass()[pri:0, instance:Day11.TestingBasics@727803de]" name="afterAClass" is-config="true" duration-ms="0" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:38 MST">
+        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:Day11.TestingBasics@10a035a0]" name="afterATestcase" is-config="true" duration-ms="0" started-at="2019-11-07T23:05:40 MST" finished-at="2019-11-07T23:05:40 MST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterAClass -->
+        </test-method> <!-- afterATestcase -->
+        <test-method status="PASS" signature="afterATestcase()[pri:0, instance:Day11.TestingBasics@10a035a0]" name="afterATestcase" is-config="true" duration-ms="0" started-at="2019-11-07T23:05:40 MST" finished-at="2019-11-07T23:05:40 MST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterATestcase -->
       </class> <!-- Day11.TestingBasics -->
-      <class name="Day11.Guru99Project">
-        <test-method status="PASS" signature="invokeBrowser(java.lang.String)[pri:0, instance:Day11.Guru99Project@2641e737]" name="invokeBrowser" is-config="true" duration-ms="3607" started-at="2019-11-07T22:01:38 MST" finished-at="2019-11-07T22:01:41 MST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method status="PASS" signature="verifyTitleOfThePage()[pri:0, instance:Day11.Guru99Project@2641e737]" name="verifyTitleOfThePage" duration-ms="10" started-at="2019-11-07T22:01:41 MST" finished-at="2019-11-07T22:01:41 MST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyTitleOfThePage -->
-        <test-method status="PASS" signature="login(java.lang.String, java.lang.String)[pri:1000, instance:Day11.Guru99Project@2641e737]" name="login" duration-ms="876" started-at="2019-11-07T22:01:41 MST" finished-at="2019-11-07T22:01:42 MST">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[mngr231023]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Eparedu]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:Day11.Guru99Project@2641e737]" name="closeBrowser" is-config="true" duration-ms="158" started-at="2019-11-07T22:01:42 MST" finished-at="2019-11-07T22:01:42 MST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- Day11.Guru99Project -->
-    </test> <!-- Class Test -->
-  </suite> <!-- Class Execution Suite -->
+    </test> <!-- Basics Test -->
+  </suite> <!-- Testing Basics Suite -->
 </testng-results>
