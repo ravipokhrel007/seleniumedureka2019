@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Testing Basics Suite">
+  <test thread-count="5" name="Basics Test">
+    <classes>
+      <class name="Day11.Guru99Project"/>
+    </classes>
+  </test> <!-- Basics Test -->
+</suite> <!-- Testing Basics Suite -->
