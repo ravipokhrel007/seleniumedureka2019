@@ -8,7 +8,7 @@ public class MultipleBrowserTesting
 {
 	WebDriver driver;
 	
-	public void invokeBrowser(String browserType)
+	public void invokeBrowser(String browserType) throws Exception
 	{
 		if(browserType.equals("chrome"))
 		{
@@ -20,7 +20,8 @@ public class MultipleBrowserTesting
 			driver = new FirefoxDriver();
 		}else
 		{
-			System.out.println("Invalid Browser type ; " + browserType);
+			throw new Exception("Invalid Broswer Type: " + browserType);
+			//System.out.println("Invalid Browser type ; " + browserType);
 		}
 		
 	}

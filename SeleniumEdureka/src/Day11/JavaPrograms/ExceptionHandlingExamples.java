@@ -11,7 +11,7 @@ public class ExceptionHandlingExamples {
 			arr[3] = 78;
 			arr[4] = 90;
 			
-			for(int i=0; i <5; i++){
+			for(int i=0; i <=5; i++){
 				System.out.println(arr[i]);
 			}
 			

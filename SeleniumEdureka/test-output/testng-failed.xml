@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Testing Basics Suite]">
-  <test thread-count="5" name="Basics Test(failed)" parallel="methods">
-    <groups>
-      <run>
-        <include name="Sanity"/>
-        <include name="Regression"/>
-      </run>
-    </groups>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
       <class name="Day11.Guru99Project">
         <methods>
           <include name="invokeBrowser"/>
           <include name="login"/>
           <include name="closeBrowser"/>
+          <include name="verifyTitleOfThePage"/>
         </methods>
       </class> <!-- Day11.Guru99Project -->
     </classes>
-  </test> <!-- Basics Test(failed) -->
-</suite> <!-- Failed suite [Testing Basics Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
