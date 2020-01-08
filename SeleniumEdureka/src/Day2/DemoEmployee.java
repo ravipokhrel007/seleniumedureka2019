@@ -4,7 +4,7 @@ public class DemoEmployee {
 
 	public static void main(String[] args) {
 		
-		//1st - Declaring a variable. Here Saurab varaibale is of class Emplopyee
+		//1st - Declaring a variable. Here Saurab varaibale is of class Employee
 		Employee saurabh;
 		
 		//2nd - Instantiation and 

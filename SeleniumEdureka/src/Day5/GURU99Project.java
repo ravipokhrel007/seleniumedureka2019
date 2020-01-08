@@ -18,6 +18,8 @@ public class GURU99Project
 		
 		System.setProperty("webdriver.chrome.driver", "/Users/p2707746/Desktop/SeleniumTraning/DriverExecutables/chromedriver");
 		
+		
+		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
@@ -39,6 +41,8 @@ public class GURU99Project
 		pwd.sendKeys(password);
 		
 		driver.findElement(By.name("btnLogin")).click();
+		
+		//driver.findElement(By.)
 		
 	}
 	
